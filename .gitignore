@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 node_modules
 
 /.cache
@@ -22,3 +23,6 @@ database.sqlite
 # Ignore shopify files created during app dev
 .shopify/*
 .shopify.lock
+=======
+.env
+>>>>>>> 96878df219c1698700d4fc7043e27f89a733bed0
