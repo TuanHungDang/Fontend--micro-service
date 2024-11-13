@@ -3,7 +3,7 @@
 client_id = "2b434da2f210b168ec280e523e1f0392"
 name = "frontend"
 handle = "frontend-21"
-application_url = "https://enables-technical-usb-applied.trycloudflare.com"
+application_url = "https://paxil-most-systematic-figure.trycloudflare.com"
 embedded = true
 
 [access_scopes]
@@ -12,9 +12,9 @@ scopes = "write_products"
 
 [auth]
 redirect_urls = [
-  "https://enables-technical-usb-applied.trycloudflare.com/auth/callback",
-  "https://enables-technical-usb-applied.trycloudflare.com/auth/shopify/callback",
-  "https://enables-technical-usb-applied.trycloudflare.com/api/auth/callback"
+  "https://paxil-most-systematic-figure.trycloudflare.com/auth/callback",
+  "https://paxil-most-systematic-figure.trycloudflare.com/auth/shopify/callback",
+  "https://paxil-most-systematic-figure.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]

@@ -14,7 +14,6 @@ import React, { useState, useCallback } from "react";
 import { NoteIcon } from "@shopify/polaris-icons";
 
 const ProductForm = () => {
-  // Khởi tạo state cho từng trường nhập liệu
   const [title, setTitle] = useState("");
   const [body_html, setBodyHtml] = useState("");
   const [price, setPrice] = useState("");
@@ -65,10 +64,13 @@ const ProductForm = () => {
     formData.append("title", title);
     formData.append("body_html", body_html);
     formData.append("price", price);
-    formData.append("image", files[0]);
+
+    files.forEach((file, index) => {
+      formData.append(`images`, file);
+    });
 
     try {
-      const response = await fetch("http://localhost:5000/api/products/create-product", {
+      const response = await fetch("http://localhost:5000/api/products/create-products", {
         method: "POST",
         headers: {
           Accept: "application/json"
